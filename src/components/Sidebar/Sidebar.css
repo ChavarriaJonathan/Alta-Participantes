@@ -1,0 +1,104 @@
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  width: 300px;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.section-header h3 {
+  color: #611232;
+  margin: 0;
+}
+
+.help-button {
+  background-color: #611232;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;  /* Ajustado a 28px para asegurar un círculo */
+  height: 28px; /* Ajustado a 28px para asegurar un círculo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0; /* Eliminado el padding para evitar deformación */
+  transition: background-color 0.3s;
+  line-height: 1; /* Para centrar mejor el ícono */
+}
+
+.help-button:hover {
+  background-color: #8a6a25;
+}
+
+.help-button svg {
+  display: block; /* Asegurar que el SVG se muestre correctamente */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  background-color: #A57F2C;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.search-options {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.search-option {
+  margin-right: 15px;
+  cursor: pointer;
+  color: #611232;
+}
+
+.search-option.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.suggestions-container {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,139 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.manual-modal {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 2px solid #611232;
+  background-color: #f8f9fa;
+}
+
+.modal-header h2 {
+  color: #611232;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #A57F2C;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  color: #611232;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-content h3 {
+  color: #611232;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #A57F2C;
+}
+
+.manual-section {
+  margin-bottom: 20px;
+}
+
+.manual-section h4 {
+  color: #A57F2C;
+  margin-bottom: 10px;
+}
+
+.manual-section p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.manual-section ul {
+  padding-left: 20px;
+}
+
+.manual-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.manual-section strong {
+  color: #611232;
+}
+
+/* Estilo para scroll en el modal */
+.manual-modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.manual-modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.manual-modal::-webkit-scrollbar-thumb {
+  background: #A57F2C;
+  border-radius: 10px;
+}
+
+.manual-modal::-webkit-scrollbar-thumb:hover {
+  background: #8a6a25;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+  .manual-modal {
+    width: 95%;
+    max-height: 85vh;
+  }
+  
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .manual-section h4 {
+    font-size: 1.1rem;
+  }
+}
